@@ -16,6 +16,8 @@ gem "puma", ">= 5.0"
 # Asset Pipeline #
 ##################
 
+# Use HAML to simplify view syntax [https://github.com/haml/haml-rails]
+gem "haml-rails"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
