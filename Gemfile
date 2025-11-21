@@ -62,6 +62,8 @@ group :development, :test do
 end
 
 group :development do
+  # Load changes immediately upon saving [https://github.com/kirillplatonov/hotwire-livereload]
+  gem "hotwire-livereload"
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
