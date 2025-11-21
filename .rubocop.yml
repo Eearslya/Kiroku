@@ -1,0 +1,66 @@
+plugins:
+  - rubocop-rails
+
+AllCops:
+  NewCops: enable
+
+Layout/CaseIndentation:
+  Enabled: true
+  EnforcedStyle: end
+Layout/EndAlignment:
+  Enabled: false
+Layout/LineEndStringConcatenationIndentation:
+  Enabled: true
+  EnforcedStyle: indented
+Layout/MultilineMethodCallIndentation:
+  Enabled: true
+  EnforcedStyle: indented_relative_to_receiver
+
+Metrics/AbcSize:
+  Enabled: false
+Metrics/BlockLength:
+  AllowedMethods:
+    - array
+    - config
+    - configure
+    - context
+    - describe
+    - it
+    - keyed_array
+    - object
+    - register
+    - scenario
+  CountAsOne: ["array", "hash", "heredoc", "method_call"]
+  Enabled: true
+  Max: 25
+Metrics/ClassLength:
+  Enabled: true
+  Exclude:
+    - "spec/**/*"
+  Max: 150
+Metrics/MethodLength:
+  CountAsOne: ["array", "hash", "heredoc", "method_call"]
+  Enabled: true
+  Max: 25
+
+Style/BlockDelimiters:
+  AllowedMethods:
+    - expect
+    - lambda
+    - proc
+    - it
+  Enabled: true
+Style/CaseEquality:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/EmptyMethod:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: never
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+Style/StringLiteralsInInterpolation:
+  Enabled: false
